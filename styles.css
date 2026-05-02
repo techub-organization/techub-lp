@@ -132,12 +132,12 @@ a {
   line-height: 0.96;
   word-break: keep-all;
   overflow-wrap: normal;
-  text-wrap: balance;
+  white-space: nowrap;
 }
 
 .hero-copy h1 {
   margin-top: 12px;
-  font-size: clamp(2.8rem, 7.4vw, 6rem);
+  font-size: clamp(1.8rem, 5.2vw, 6rem);
   letter-spacing: -0.04em;
 }
 
@@ -252,9 +252,9 @@ a {
 
 .section-heading h2 {
   margin-top: 10px;
-  font-size: clamp(1.85rem, 4.2vw, 3.35rem);
+  font-size: clamp(1.45rem, 3.2vw, 3.35rem);
   line-height: 1.08;
-  max-width: 12em;
+  max-width: none;
 }
 
 .intro-grid {
@@ -321,6 +321,7 @@ a {
 .value-card h3 {
   margin: 10px 0 8px;
   font-size: 1.28rem;
+  white-space: nowrap;
 }
 
 .value-card p,
@@ -356,7 +357,8 @@ a {
 .work-card h3,
 .community-card h3 {
   margin: 0 0 10px;
-  font-size: 1.5rem;
+  font-size: clamp(1.15rem, 1.9vw, 1.5rem);
+  white-space: nowrap;
 }
 
 .work-card a,
@@ -442,16 +444,15 @@ a {
   }
 
   .hero-copy h1 {
-    font-size: clamp(2.2rem, 11vw, 3.35rem);
+    font-size: clamp(1.3rem, 6vw, 2.4rem);
     line-height: 1.02;
   }
 
   .section-heading h2 {
-    font-size: clamp(1.65rem, 7vw, 2.35rem);
-    max-width: none;
+    font-size: clamp(1.1rem, 4.6vw, 1.9rem);
   }
 
   .quote-card blockquote {
-    font-size: clamp(1.6rem, 6.4vw, 2.2rem);
+    font-size: clamp(1.2rem, 4.5vw, 1.8rem);
   }
 }
