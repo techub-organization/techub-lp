@@ -299,6 +299,7 @@ a {
   margin-top: 16px;
   font-size: clamp(1.9rem, 3.8vw, 3rem);
   line-height: 1.12;
+  white-space: normal;
 }
 
 .quote-card span {
