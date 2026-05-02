@@ -328,6 +328,20 @@ a {
   line-height: 1.75;
 }
 
+@media (max-width: 1100px) {
+  .intro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-card {
+    padding: 24px;
+  }
+
+  .quote-card blockquote {
+    font-size: clamp(1.55rem, 3vw, 2.3rem);
+  }
+}
+
 .value-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
