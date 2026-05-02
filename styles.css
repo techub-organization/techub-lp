@@ -54,6 +54,18 @@ a {
   box-shadow: var(--shadow);
 }
 
+.hero::before,
+.section::before {
+  content: "";
+  position: absolute;
+  inset: auto auto -80px -80px;
+  width: 220px;
+  height: 220px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(243, 154, 216, 0.18), transparent 70%);
+  pointer-events: none;
+}
+
 .hero {
   padding: 24px;
 }
@@ -73,6 +85,7 @@ a {
   grid-template-columns: 1fr auto;
   align-items: center;
   margin-bottom: 40px;
+  gap: 16px;
 }
 
 .brand {
@@ -117,6 +130,9 @@ a {
 }
 
 .top-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px 16px;
   border-radius: 999px;
   border: 1px solid var(--line);
@@ -143,13 +159,13 @@ a {
 
 .hero-copy h1 {
   margin-top: 12px;
-  font-size: clamp(1.8rem, 5.2vw, 6rem);
+  font-size: clamp(1.65rem, 4.9vw, 5.8rem);
   letter-spacing: -0.04em;
 }
 
 .hero-lead {
   max-width: 42rem;
-  font-size: 1.08rem;
+  font-size: clamp(0.98rem, 1.2vw, 1.08rem);
   line-height: 1.85;
   color: var(--muted);
   text-wrap: pretty;
@@ -249,7 +265,7 @@ a {
 
 .section {
   margin-top: 24px;
-  padding: 32px 24px;
+  padding: 36px 28px;
 }
 
 .section-heading {
@@ -259,7 +275,7 @@ a {
 
 .section-heading h2 {
   margin-top: 10px;
-  font-size: clamp(1.45rem, 3.2vw, 3.35rem);
+  font-size: clamp(1.3rem, 2.9vw, 3.15rem);
   line-height: 1.08;
   max-width: none;
 }
@@ -349,6 +365,7 @@ a {
 
 .work-card {
   padding: 24px;
+  container-type: inline-size;
 }
 
 .work-card-featured {
@@ -358,6 +375,7 @@ a {
 .work-meta {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 16px;
   margin-bottom: 18px;
 }
@@ -376,6 +394,10 @@ a {
   font-weight: 700;
   color: var(--accent-deep);
   word-break: break-word;
+}
+
+.work-card a + a {
+  margin-left: 14px;
 }
 
 .community-grid {
@@ -423,10 +445,20 @@ a {
 
   .topbar {
     grid-template-columns: 1fr;
+    justify-items: start;
   }
 
   .community-card-wide {
     grid-column: auto;
+  }
+
+  .metric-row {
+    grid-template-columns: 1fr;
+  }
+
+  .work-meta {
+    flex-direction: column;
+    gap: 6px;
   }
 }
 
@@ -452,15 +484,45 @@ a {
   }
 
   .hero-copy h1 {
-    font-size: clamp(1.3rem, 6vw, 2.4rem);
+    font-size: clamp(0.96rem, 4.4vw, 1.85rem);
     line-height: 1.02;
   }
 
   .section-heading h2 {
-    font-size: clamp(1.1rem, 4.6vw, 1.9rem);
+    font-size: clamp(1rem, 4vw, 1.6rem);
   }
 
   .quote-card blockquote {
     font-size: clamp(1.2rem, 4.5vw, 1.8rem);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .button,
+  .top-link {
+    width: 100%;
+  }
+
+  .work-card a {
+    display: block;
+    margin-left: 0;
+  }
+
+  .work-card a + a {
+    margin-left: 0;
+  }
+
+  .value-card h3,
+  .work-card h3,
+  .community-card h3,
+  .status-value,
+  .community-number {
+    font-size: clamp(1rem, 4.1vw, 1.3rem);
+  }
+
+  .community-number {
+    font-size: clamp(2rem, 11vw, 3rem);
   }
 }
