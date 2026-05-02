@@ -24,6 +24,9 @@ body {
   margin: 0;
   color: var(--ink);
   font-family: "Noto Sans JP", sans-serif;
+  line-break: strict;
+  word-break: keep-all;
+  overflow-wrap: break-word;
   background:
     radial-gradient(circle at top left, rgba(238, 108, 45, 0.22), transparent 28%),
     radial-gradient(circle at top right, rgba(15, 118, 110, 0.16), transparent 24%),
@@ -127,11 +130,15 @@ a {
   margin: 0;
   font-family: "Space Grotesk", "Noto Sans JP", sans-serif;
   line-height: 0.96;
+  word-break: keep-all;
+  overflow-wrap: normal;
+  text-wrap: balance;
 }
 
 .hero-copy h1 {
   margin-top: 12px;
-  font-size: clamp(3rem, 9vw, 6.4rem);
+  font-size: clamp(2.8rem, 7.4vw, 6rem);
+  letter-spacing: -0.04em;
 }
 
 .hero-lead {
@@ -139,6 +146,7 @@ a {
   font-size: 1.08rem;
   line-height: 1.85;
   color: var(--muted);
+  text-wrap: pretty;
 }
 
 .hero-actions {
@@ -244,7 +252,9 @@ a {
 
 .section-heading h2 {
   margin-top: 10px;
-  font-size: clamp(2rem, 5vw, 3.6rem);
+  font-size: clamp(1.85rem, 4.2vw, 3.35rem);
+  line-height: 1.08;
+  max-width: 12em;
 }
 
 .intro-grid {
@@ -266,6 +276,7 @@ a {
   padding: 14px 0;
   border-top: 1px solid var(--line);
   line-height: 1.7;
+  text-wrap: pretty;
 }
 
 .check-list li:first-child {
@@ -279,7 +290,8 @@ a {
 
 .quote-card blockquote {
   margin-top: 16px;
-  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-size: clamp(1.9rem, 3.8vw, 3rem);
+  line-height: 1.12;
 }
 
 .quote-card span {
@@ -319,6 +331,7 @@ a {
   margin: 0;
   color: var(--muted);
   line-height: 1.75;
+  text-wrap: pretty;
 }
 
 .works-grid {
@@ -429,6 +442,16 @@ a {
   }
 
   .hero-copy h1 {
-    font-size: clamp(2.6rem, 16vw, 4rem);
+    font-size: clamp(2.2rem, 11vw, 3.35rem);
+    line-height: 1.02;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(1.65rem, 7vw, 2.35rem);
+    max-width: none;
+  }
+
+  .quote-card blockquote {
+    font-size: clamp(1.6rem, 6.4vw, 2.2rem);
   }
 }
