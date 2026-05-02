@@ -1,15 +1,15 @@
 :root {
-  --bg: #f3efe5;
-  --paper: rgba(255, 251, 244, 0.78);
-  --paper-strong: #fffaf1;
-  --ink: #191410;
-  --muted: #675b50;
-  --line: rgba(25, 20, 16, 0.12);
-  --accent: #ee6c2d;
-  --accent-soft: #ffb973;
-  --accent-deep: #b44316;
-  --teal: #0f766e;
-  --shadow: 0 24px 80px rgba(76, 48, 23, 0.12);
+  --bg: #f5f1ea;
+  --paper: rgba(255, 251, 246, 0.84);
+  --paper-strong: #fffdfa;
+  --ink: #1f1a17;
+  --muted: #6e6259;
+  --line: rgba(49, 37, 29, 0.1);
+  --accent: #c86432;
+  --accent-soft: #e5b089;
+  --accent-deep: #8f3f1d;
+  --accent-wash: rgba(200, 100, 50, 0.1);
+  --shadow: 0 24px 80px rgba(60, 40, 24, 0.1);
 }
 
 * {
@@ -28,9 +28,9 @@ body {
   word-break: keep-all;
   overflow-wrap: break-word;
   background:
-    radial-gradient(circle at top left, rgba(238, 108, 45, 0.22), transparent 28%),
-    radial-gradient(circle at top right, rgba(15, 118, 110, 0.16), transparent 24%),
-    linear-gradient(180deg, #f7f1e6 0%, #efe7d8 100%);
+    radial-gradient(circle at top left, rgba(200, 100, 50, 0.16), transparent 30%),
+    radial-gradient(circle at top right, rgba(229, 176, 137, 0.18), transparent 26%),
+    linear-gradient(180deg, #faf6ef 0%, #f1e9dd 100%);
 }
 
 a {
@@ -88,7 +88,8 @@ a {
   height: 52px;
   padding: 6px;
   border-radius: 16px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+  background: linear-gradient(135deg, #f2c6a7, #fbf2e8);
+  border: 1px solid rgba(143, 63, 29, 0.12);
 }
 
 .brand-logo {
@@ -119,7 +120,7 @@ a {
   padding: 12px 16px;
   border-radius: 999px;
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 253, 250, 0.82);
 }
 
 .hero-grid {
@@ -173,13 +174,13 @@ a {
 }
 
 .button-primary {
-  background: var(--ink);
+  background: #2a211c;
   color: #fff;
 }
 
 .button-secondary {
   border-color: var(--line);
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 253, 250, 0.75);
 }
 
 .hero-panel,
@@ -208,7 +209,7 @@ a {
 .timeline-item,
 .metric-card {
   border: 1px solid var(--line);
-  background: rgba(255, 252, 247, 0.82);
+  background: rgba(255, 253, 250, 0.86);
 }
 
 .status-card {
@@ -290,7 +291,7 @@ a {
 }
 
 .quote-card {
-  background: linear-gradient(160deg, rgba(238, 108, 45, 0.12), rgba(255, 255, 255, 0.72));
+  background: linear-gradient(160deg, rgba(200, 100, 50, 0.12), rgba(255, 253, 250, 0.92));
 }
 
 .quote-card blockquote {
@@ -349,7 +350,7 @@ a {
 }
 
 .work-card-featured {
-  background: linear-gradient(160deg, rgba(15, 118, 110, 0.13), rgba(255, 255, 255, 0.84));
+  background: linear-gradient(160deg, rgba(200, 100, 50, 0.14), rgba(255, 253, 250, 0.94));
 }
 
 .work-meta {
@@ -371,7 +372,7 @@ a {
   display: inline-block;
   margin-top: 16px;
   font-weight: 700;
-  color: var(--teal);
+  color: var(--accent-deep);
   word-break: break-word;
 }
 
@@ -390,7 +391,7 @@ a {
 
 .community-card-wide {
   grid-column: span 1;
-  background: linear-gradient(180deg, rgba(255, 185, 115, 0.18), rgba(255, 255, 255, 0.8));
+  background: linear-gradient(180deg, rgba(229, 176, 137, 0.22), rgba(255, 253, 250, 0.92));
 }
 
 .community-copy {
