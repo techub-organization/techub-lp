@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
@@ -11,72 +11,99 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="./assets/favicons/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/favicons/icon-192x192.png"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <script>document.documentElement.classList.add('js-anim');</script>
+    <script>
+      document.documentElement.classList.add("js-anim");
+    </script>
   </head>
   <body>
-    <div class="page-shell">
-      <header class="hero">
+    <header class="hero">
+      <div class="container">
         <nav class="topbar">
           <div class="brand">
             <span class="brand-mark">
-              <img src="Techub.png" alt="Tech Hub" class="brand-logo" />
+              <img
+                src="./assets/icons/icon01.svg"
+                alt="Tech Hub"
+                class="brand-logo"
+              />
             </span>
             <div>
-              <p class="eyebrow">Tech Hub</p>
+              <p class="brand-label">Tech Hub</p>
               <p class="brand-name">開発部</p>
             </div>
           </div>
-          <a class="top-link" href="https://github.com/techub-organization">GitHub Organization</a>
+          <a class="top-link" href="https://github.com/techub-organization"
+            >GitHub Organization</a
+          >
         </nav>
 
         <div class="hero-grid">
           <section class="hero-copy">
-            <span class="hero-eyebrow">Build With Curiosity</span>
-            <h1>目指せっ競プロと対になる部活‼️</h1>
-            <p class="hero-lead">
+            <p class="hero-label">Build With Curiosity</p>
+            <h1 class="reveal-heading">目指せっ<br />競プロと対になる部活‼️</h1>
+            <p class="hero-lead reveal">
               開発部は、Slackチャンネルを起点に、初心者から個人開発者、ビジネス職まで、
               「つくってみたい」「開発の話がしたい」という気持ちを持った人が集まる部活です。
             </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#about">部活の考え方を見る</a>
-              <a class="button button-secondary" href="#works">プロダクトを見る</a>
+            <div class="hero-actions reveal">
+              <a class="button button-primary" href="#about"
+                >部活の考え方を見る</a
+              >
+              <a class="button button-secondary" href="#works"
+                >プロダクトを見る</a
+              >
             </div>
           </section>
 
-          <aside class="hero-panel">
-            <div class="status-card">
-              <p class="status-label">Officialization Status</p>
+          <aside class="hero-panel reveal">
+            <div class="status-block">
+              <span class="status-label">Officialization Status</span>
               <p class="status-value">承認待ち</p>
               <p class="status-text">
                 2026年4月13日に新規部活動申請を提出。現在は公式化に向けて進行中です。
               </p>
             </div>
             <div class="metric-row">
-              <article class="metric-card">
+              <div class="metric-item">
                 <span>Members</span>
                 <strong>25名</strong>
-              </article>
-              <article class="metric-card">
+              </div>
+              <div class="metric-item">
                 <span>Backgrounds</span>
                 <strong>Engineer + Business</strong>
-              </article>
+              </div>
             </div>
           </aside>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <main>
-        <section class="section intro reveal" id="about">
+    <main>
+      <section class="section intro" id="about">
+        <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Concept</p>
-            <h2>技術の深さより、まずは一歩目を歓迎する。</h2>
+            <span class="section-number reveal">01</span>
+            <p class="section-label">Concept</p>
+            <h2 class="reveal-heading">
+              技術の深さより、まずは一歩目を歓迎する。
+            </h2>
           </div>
           <div class="intro-grid">
-            <article class="glass-card reveal reveal-d1">
+            <div class="intro-content reveal">
               <h3>この部活が大事にしていること</h3>
               <ul class="check-list">
                 <li>初心者ウェルカム</li>
@@ -85,9 +112,9 @@
                 <li>個人開発だけでも構わない。まずは開発の話をする</li>
                 <li>互いをリスペクトし、理念の押し付けをしない</li>
               </ul>
-            </article>
-            <article class="quote-card reveal reveal-d2">
-              <p class="quote-label">Club Purpose</p>
+            </div>
+            <div class="intro-quote reveal">
+              <span class="quote-label">Club Purpose</span>
               <blockquote>
                 この部活を立ち上げようと思った目的は
                 <span>「助けてもらう」</span>ためだったりします～！
@@ -95,253 +122,280 @@
               <p class="quote-note">
                 一人で抱え込まず、つくる途中を見せ合って前に進むための場です。
               </p>
-            </article>
+            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section values reveal">
+      <section class="section values">
+        <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Values</p>
-            <h2>開発部を形づくる6つの基準。</h2>
+            <span class="section-number reveal">02</span>
+            <p class="section-label">Values</p>
+            <h2 class="reveal-heading">開発部を形づくる6つの基準。</h2>
           </div>
-          <div class="value-grid">
-            <article class="value-card reveal reveal-d1">
-              <span>01</span>
+          <div class="value-list reveal">
+            <div class="value-item">
+              <span class="value-number">01</span>
               <h3>Integrity</h3>
               <p>誠実に向き合い、成果も課題もオープンに扱う。</p>
-            </article>
-            <article class="value-card reveal reveal-d2">
-              <span>02</span>
+            </div>
+            <div class="value-item">
+              <span class="value-number">02</span>
               <h3>Grit</h3>
               <p>詰まっても止まらず、試しながら前に進める。</p>
-            </article>
-            <article class="value-card reveal reveal-d3">
-              <span>03</span>
+            </div>
+            <div class="value-item">
+              <span class="value-number">03</span>
               <h3>Challenge</h3>
               <p>未経験でも、小さくつくって学ぶ姿勢を歓迎する。</p>
-            </article>
-            <article class="value-card reveal reveal-d4">
-              <span>04</span>
+            </div>
+            <div class="value-item">
+              <span class="value-number">04</span>
               <h3>Logic</h3>
               <p>感覚ではなく、考えた理由を持って議論する。</p>
-            </article>
-            <article class="value-card reveal reveal-d5">
-              <span>05</span>
+            </div>
+            <div class="value-item">
+              <span class="value-number">05</span>
               <h3>AI-Standard</h3>
               <p>AIを前提に、設計や実装の速度と質を引き上げる。</p>
-            </article>
-            <article class="value-card reveal reveal-d6">
-              <span>06</span>
+            </div>
+            <div class="value-item">
+              <span class="value-number">06</span>
               <h3>Well-being</h3>
               <p>消耗戦にしない。続けられる状態をつくる。</p>
-            </article>
+            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section works reveal" id="works">
+      <section class="section works" id="works">
+        <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Products</p>
-            <h2>会話だけで終わらず、プロダクトが増えていく。</h2>
+            <span class="section-number reveal">03</span>
+            <p class="section-label">Products</p>
+            <h2 class="reveal-heading">
+              会話だけで終わらず、プロダクトが増えていく。
+            </h2>
           </div>
-          <div class="works-grid">
-            <article class="work-card work-card-featured">
-              <div class="work-meta">
-                <span>Web App</span>
-                <span>公開済み</span>
-              </div>
-              <h3>Reachtrail</h3>
-              <p>
-                ランチを記録し、到達難易度や登録数で評価するアプリ。公開済みのWEB版を起点に、
-                macOS から Android / iOS への展開も見据えて進んでいます。
-              </p>
-              <a href="https://app.reachtrail.riumu.net">app.reachtrail.riumu.net</a>
-            </article>
 
-            <article class="work-card">
-              <div class="work-meta">
-                <span>Social Product</span>
-                <span>公開済み</span>
-              </div>
+          <article class="product-featured reveal">
+            <div class="product-meta">
+              <span class="product-tag">Web App</span>
+              <span class="product-tag">公開済み</span>
+            </div>
+            <h3>Reachtrail</h3>
+            <p>
+              ランチを記録し、到達難易度や登録数で評価するアプリ。公開済みのWEB版を起点に、
+              macOS から Android / iOS への展開も見据えて進んでいます。
+            </p>
+            <a class="product-link" href="https://app.reachtrail.riumu.net"
+              >app.reachtrail.riumu.net</a
+            >
+          </article>
+
+          <div class="product-grid reveal">
+            <article class="product-card">
+              <span class="product-tag">Social Product</span>
               <h3>Wordock</h3>
               <p>
-                言葉をテーマにしたSNSプロダクト。複数の個人開発が並走していること自体が、
-                開発部のオーナーシップを表しています。
+                言葉をテーマにしたSNSプロダクト。複数の個人開発が並走していること自体が、開発部のオーナーシップを表しています。
               </p>
-              <a href="https://wordock.riumu.net">wordock.riumu.net</a>
+              <a class="product-link" href="https://wordock.riumu.net"
+                >wordock.riumu.net</a
+              >
             </article>
 
-            <article class="work-card">
-              <div class="work-meta">
-                <span>Portfolio Site</span>
-                <span>改修進行中</span>
-              </div>
+            <article class="product-card">
+              <span class="product-tag">Portfolio</span>
               <h3>ポートフォリオサイト</h3>
               <p>
-                GitHub Actions を使った修正更新の自動化も視野に入れながら、継続的に改修が進んでいるサイトです。
+                GitHub Actions
+                を使った修正更新の自動化も視野に入れながら、継続的に改修が進んでいるサイトです。
               </p>
-              <a href="https://portorifo.riumu.net">portorifo.riumu.net</a>
+              <a class="product-link" href="https://portorifo.riumu.net"
+                >portorifo.riumu.net</a
+              >
             </article>
 
-            <article class="work-card">
-              <div class="work-meta">
-                <span>Chrome Extension</span>
-                <span>試作段階</span>
-              </div>
+            <article class="product-card">
+              <span class="product-tag">Chrome Extension</span>
               <h3>LLM Google Calendar Extension</h3>
               <p>
-                ブラウザ上のどのページからでも、AIを使ってメモから予定追加できるChrome拡張。
-                今後はSlackワークフローとの連携も視野に入っています。
+                ブラウザ上のどのページからでも、AIを使ってメモから予定追加できるChrome拡張。今後はSlackワークフローとの連携も視野に入っています。
               </p>
-              <span class="work-note">限定配布の試作版あり</span>
+              <span class="product-note">試作版あり</span>
             </article>
 
-            <article class="work-card">
-              <div class="work-meta">
-                <span>Mobile App</span>
-                <span>公開準備中</span>
-              </div>
+            <article class="product-card">
+              <span class="product-tag">Mobile App</span>
               <h3>Androidアプリ</h3>
               <p>
-                Google Play 申請を通過し、現在は公開準備中。Webだけで終わらず、配布体験まで踏み込んでいます。
+                Google Play
+                申請を通過し、現在は公開準備中。Webだけで終わらず、配布体験まで踏み込んでいます。
               </p>
-              <span class="work-note">2026年4月27日に申請通過</span>
+              <span class="product-note">申請通過</span>
             </article>
 
-            <article class="work-card">
-              <div class="work-meta">
-                <span>Frontend Learning</span>
-                <span>React + Vite</span>
-              </div>
+            <article class="product-card">
+              <span class="product-tag">Learning</span>
               <h3>Dockerクイズページ</h3>
               <p>
                 基礎の○×と応用の4択を備えた学習用サイト。Namespace / cgroup
-                まで含めた出題で、React + Vite 製、Vercel 公開。
+                まで含めた出題で、React + Vite 製。
               </p>
-              <a href="https://docker-quiz.vercel.app">docker-quiz.vercel.app</a>
+              <a class="product-link" href="https://docker-quiz.vercel.app"
+                >docker-quiz.vercel.app</a
+              >
             </article>
 
-            <article class="work-card">
-              <div class="work-meta">
-                <span>Bot / Analysis</span>
-                <span>Bot / Analysis</span>
-              </div>
+            <article class="product-card">
+              <span class="product-tag">Bot</span>
               <h3>Slackチャンネル分析bot</h3>
               <p>
                 Slackの発言を解析するbot。現在は日報対応を中心に運用され、ソースコードもGitHubで公開。
               </p>
-              <a href="https://github.com/naoya25/slack-channel-digest-public">
-                github.com/naoya25/slack-channel-digest-public
-              </a>
+              <a
+                class="product-link"
+                href="https://github.com/naoya25/slack-channel-digest-public"
+                >GitHub</a
+              >
             </article>
 
-            <article class="work-card">
-              <div class="work-meta">
-                <span>AI Design</span>
-                <span>AI Design</span>
-              </div>
+            <article class="product-card">
+              <span class="product-tag">AI Design</span>
               <h3>AI仕様設計の検証</h3>
               <p>
                 音声アシスト機能の仕様書と提案書をAIに設計させ、実務レベルでどこまで使えるかを検証。
               </p>
-              <span class="work-note">ドキュメントベースの検証実績</span>
+              <span class="product-note">検証実績</span>
             </article>
 
-            <article class="work-card">
-              <div class="work-meta">
-                <span>Discord Utility</span>
-                <span>個人運用中</span>
-              </div>
+            <article class="product-card">
+              <span class="product-tag">Discord</span>
               <h3>ccusage Discord bot</h3>
               <p>
                 AI使用率の計算や、リセット時間までのリマインド、スラッシュコマンドを実装した個人利用ボットです。
               </p>
-              <span class="work-note">Windows / Ubuntu / VPS の利用状況を集計</span>
+              <span class="product-note">個人運用中</span>
             </article>
 
-            <article class="work-card">
-              <div class="work-meta">
-                <span>Knowledge Sharing</span>
-                <span>Slack Culture</span>
-              </div>
+            <article class="product-card">
+              <span class="product-tag">Knowledge</span>
               <h3>雑談が知識共有になる</h3>
               <p>
-                SELECT 1 の解説、Windowsシェル比較、Dockerの学び直し、AIツールの小ネタ共有など、
-                日々の投稿自体が部活のナレッジになっています。
+                SELECT 1
+                の解説、Windowsシェル比較、Dockerの学び直し、AIツールの小ネタ共有など、日々の投稿自体が部活のナレッジになっています。
               </p>
-              <span class="work-note">会話がそのまま学習ログになる運営</span>
+              <span class="product-note">Slack Culture</span>
             </article>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section community reveal">
+      <section class="section community">
+        <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Community</p>
-            <h2>エンジニアだけの場ではない。</h2>
+            <span class="section-number reveal">04</span>
+            <p class="section-label">Community</p>
+            <h2 class="reveal-heading">エンジニアだけの場ではない。</h2>
           </div>
-          <div class="community-grid">
-            <article class="community-card">
-              <p class="community-number">25</p>
+          <div class="community-stats reveal">
+            <article class="community-stat">
+              <p class="stat-number" data-count="25">0</p>
               <h3>参加メンバー</h3>
               <p>
                 部長と管轄人事を除いた25名が参加。Slackチャンネルを土台に、日々の会話とアウトプットが積み上がっています。
               </p>
             </article>
-            <article class="community-card">
-              <p class="community-number">Mix</p>
+            <article class="community-stat">
+              <p class="stat-number">Mix</p>
               <h3>職種をまたぐ構成</h3>
               <p>
                 エンジニア職とビジネス職が混在しているため、実装だけでなく顧客理解や業務理解まで含めて会話が広がります。
               </p>
             </article>
-            <article class="community-card community-card-wide">
-              <p class="community-label">What Makes It Different</p>
-              <p class="community-copy">
-                開発部は、コードを書く人だけの集まりではありません。実装、企画、顧客理解、業務理解が混ざることで、
-                ただの勉強会ではなく、現実の課題に触れながらつくる部活になっています。
+          </div>
+          <div class="community-detail reveal">
+            <p class="community-detail-label">What Makes It Different</p>
+            <p class="community-detail-text">
+              開発部は、コードを書く人だけの集まりではありません。実装、企画、顧客理解、業務理解が混ざることで、
+              ただの勉強会ではなく、現実の課題に触れながらつくる部活になっています。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section timeline-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-number reveal">05</span>
+            <p class="section-label">Progress</p>
+            <h2 class="reveal-heading">非公式から、正式な部活へ。</h2>
+          </div>
+          <div class="timeline-track">
+            <article class="timeline-item reveal">
+              <span class="timeline-date">2026.04.07</span>
+              <p>
+                チャンネル開設。初心者歓迎、個人開発歓迎、相互リスペクトの方針を共有。
               </p>
             </article>
-          </div>
-        </section>
-
-        <section class="section timeline reveal">
-          <div class="section-heading">
-            <p class="eyebrow">Progress</p>
-            <h2>非公式から、正式な部活へ。</h2>
-          </div>
-          <div class="timeline-list">
-            <article class="timeline-item">
-              <span>2026.04.07</span>
-              <p>チャンネル開設。初心者歓迎、個人開発歓迎、相互リスペクトの方針を共有。</p>
+            <article class="timeline-item reveal">
+              <span class="timeline-date">2026.04.08</span>
+              <p>
+                「目指せっ競プロと対になる部活！！」というキャッチコピー案が投稿される。
+              </p>
             </article>
-            <article class="timeline-item">
-              <span>2026.04.08</span>
-              <p>「目指せっ競プロと対になる部活！！」というキャッチコピー案が投稿される。</p>
+            <article class="timeline-item reveal">
+              <span class="timeline-date">2026.04.09</span>
+              <p>
+                部活の目的として「助けてもらうために立ち上げた」という本音が共有される。
+              </p>
             </article>
-            <article class="timeline-item">
-              <span>2026.04.09</span>
-              <p>部活の目的として「助けてもらうために立ち上げた」という本音が共有される。</p>
-            </article>
-            <article class="timeline-item">
-              <span>2026.04.13</span>
+            <article class="timeline-item reveal">
+              <span class="timeline-date">2026.04.13</span>
               <p>新規部活動申請を提出。現在は公式化に向けて承認待ち。</p>
             </article>
           </div>
-        </section>
-        <section class="section cta reveal" id="join">
+        </div>
+      </section>
+
+      <section class="section cta" id="join">
+        <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Join Us</p>
-            <h2>つくる人が、もっと集まれる場所に。</h2>
+            <p class="section-label">Join Us</p>
+            <h2 class="reveal-heading">つくる人が、もっと集まれる場所に。</h2>
           </div>
-          <p class="cta-body">
-            スキルや経験は問いません。「何かつくってみたい」「開発の話がしたい」という気持ちがあれば、それがすでに参加する理由です。
+          <p class="cta-body reveal">
+            スキルや経験は問いません。<span class="nowrap"
+              >「何かつくってみたい」</span
+            ><span class="nowrap">「開発の話がしたい」</span
+            >という気持ちがあれば、それがすでに参加する理由です。
           </p>
-          <div class="cta-actions">
-            <a class="button button-primary" href="https://github.com/techub-organization">GitHub Organization を見る</a>
-            <a class="button button-secondary" href="#about">部活の考え方を読む</a>
+          <div class="cta-actions reveal">
+            <a
+              class="button button-primary"
+              href="https://github.com/techub-organization"
+              >GitHub Organization を見る</a
+            >
+            <a class="button button-secondary" href="#about"
+              >部活の考え方を読む</a
+            >
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner">
+          <p class="footer-brand">Tech Hub / 開発部</p>
+          <a class="footer-link" href="https://github.com/techub-organization"
+            >GitHub Organization</a
+          >
+        </div>
+      </div>
+    </footer>
 
     <script>
       (function () {
@@ -349,16 +403,50 @@
           function (entries) {
             entries.forEach(function (entry) {
               if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
+                entry.target.classList.add("is-visible");
                 io.unobserve(entry.target);
               }
             });
           },
-          { threshold: 0.08, rootMargin: '0px 0px -32px 0px' }
+          { threshold: 0.1, rootMargin: "0px 0px -60px 0px" },
         );
-        document.querySelectorAll('.reveal').forEach(function (el) {
-          io.observe(el);
+        document
+          .querySelectorAll(".reveal, .reveal-heading")
+          .forEach(function (el) {
+            io.observe(el);
+          });
+        document.querySelectorAll(".timeline-item").forEach(function (el, i) {
+          el.style.transitionDelay = i * 0.1 + "s";
         });
+
+        var countEl = document.querySelector("[data-count]");
+        if (countEl) {
+          var countIO = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  var target = parseInt(
+                    entry.target.getAttribute("data-count"),
+                    10,
+                  );
+                  var current = 0;
+                  var step = Math.ceil(target / 30);
+                  var timer = setInterval(function () {
+                    current += step;
+                    if (current >= target) {
+                      current = target;
+                      clearInterval(timer);
+                    }
+                    entry.target.textContent = current;
+                  }, 30);
+                  countIO.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.3 },
+          );
+          countIO.observe(countEl);
+        }
       })();
     </script>
   </body>
